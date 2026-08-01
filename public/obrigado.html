@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Compra Confirmada — Protocolo de Reconquista</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #07070f;
+      color: #f1f1f3;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+    }
+
+    .top-bar {
+      background: #14532d;
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #86efac;
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+      text-align: center;
+    }
+
+    .check-circle {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin: 0 auto 24px;
+      box-shadow: 0 0 40px rgba(34,197,94,.3);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: #f1f1f3;
+    }
+
+    .subtitle {
+      color: #9ca3af;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .highlight { color: #f59e0b; font-weight: 700; }
+    .green { color: #84cc16; font-weight: 700; }
+
+    .card {
+      background: #0f0f1a;
+      border: 1px solid #1e1e2e;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .card-green { border-color: #16a34a; }
+    .card-gold  { border-color: #d97706; }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #6b7280;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+
+    .step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #d97706;
+      color: #07070f;
+      font-weight: 900;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-text {
+      color: #d1d5db;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .step-text strong { color: #fff; }
+
+    .product-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .product-item:last-child { margin-bottom: 0; }
+
+    .product-icon { font-size: 20px; }
+
+    .product-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #f1f1f3;
+    }
+
+    .product-tag {
+      margin-left: auto;
+      background: #14532d;
+      color: #86efac;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 99px;
+    }
+
+    .email-box {
+      background: #0a1a0a;
+      border: 1px solid #16a34a;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-top: 12px;
+    }
+
+    .email-box p {
+      color: #86efac;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #1e1e2e;
+      margin: 24px 0;
+    }
+
+    .support {
+      color: #6b7280;
+      font-size: 12px;
+      line-height: 1.6;
+      margin-top: 32px;
+    }
+
+    .support a {
+      color: #f59e0b;
+      text-decoration: none;
+    }
+
+    .start-btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, #d97706, #f59e0b);
+      color: #07070f;
+      font-weight: 800;
+      font-size: 16px;
+      border: none;
+      border-radius: 14px;
+      padding: 18px 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 24px;
+      box-shadow: 0 4px 20px rgba(245,158,11,.35);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    ✅ COMPRA CONFIRMADA — Bem-vindo ao Protocolo de Reconquista
+  </div>
+
+  <div class="container">
+
+    <!-- CONFIRMAÇÃO -->
+    <div class="check-circle">✓</div>
+
+    <h1>Sua compra foi confirmada!</h1>
+    <p class="subtitle">
+      Tudo certo. O material está sendo enviado para o seu email agora.
+      <span class="highlight">Verifique sua caixa de entrada em até 5 minutos.</span>
+    </p>
+
+    <!-- O QUE VOCÊ RECEBEU -->
+    <div class="card card-green">
+      <p class="section-title">O que você adquiriu</p>
+
+      <div class="product-item">
+        <span class="product-icon">📘</span>
+        <span class="product-name">Protocolo de Reconquista</span>
+        <span class="product-tag">✓ Incluso</span>
+      </div>
+
+      <div class="product-item" id="item-orderbump" style="display:none">
+        <span class="product-icon">⚡</span>
+        <span class="product-name">Os Erros que Destroem Qualquer Chance</span>
+        <span class="product-tag">✓ Incluso</span>
+      </div>
+
+      <div class="product-item" id="item-upsell" style="display:none">
+        <span class="product-icon">🔓</span>
+        <span class="product-name">Quando Parece Impossível</span>
+        <span class="product-tag">✓ Incluso</span>
+      </div>
+    </div>
+
+    <!-- PRÓXIMOS PASSOS -->
+    <div class="card">
+      <p class="section-title">Próximos passos</p>
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <p class="step-text">
+          <strong>Verifique seu email</strong> — o link de acesso ao material foi enviado agora. Se não encontrar em 5 minutos, cheque a pasta de spam.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <p class="step-text">
+          <strong>Leia o Capítulo 2 primeiro</strong> — Os 7 erros fatais. Antes de qualquer ação, você precisa parar o que está fazendo de errado.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <p class="step-text">
+          <strong>Inicie o Protocolo hoje</strong> — cada dia conta. Siga as fases na ordem e não pule etapas.
+        </p>
+      </div>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="card card-gold">
+      <p class="section-title">Não recebeu o email?</p>
+      <div class="email-box">
+        <p>📧 Verifique a pasta <strong>Spam</strong> ou <strong>Promoções</strong></p>
+        <p style="margin-top:6px">⏱ Pode levar até 10 minutos em alguns provedores</p>
+        <p style="margin-top:6px">📱 Se ainda assim não chegar, entre em contato pelo suporte abaixo</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- MENSAGEM FINAL -->
+    <p style="color:#d1d5db; font-size:15px; line-height:1.7; margin-bottom:8px;">
+      Você tomou a decisão certa. A maioria dos homens na sua situação
+      fica preso na paralisia — esperando, mandando mensagem, sem direção.
+    </p>
+    <p style="color:#f59e0b; font-size:15px; line-height:1.7; font-weight:600;">
+      Você escolheu agir com método. Isso já te coloca à frente.
+    </p>
+
+    <!-- SUPORTE -->
+    <div class="support">
+      <p>Dúvidas? Entre em contato:</p>
+      <p><a href="mailto:reconquista@gmail.com">reconquista@gmail.com</a></p>
+    </div>
+
+  </div>
+
+</body>
+</html>
