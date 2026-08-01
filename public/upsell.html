@@ -1,1 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Oferta Especial — Protocolo para Casos Extremos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    body {
+      background: #07070f;
+      color: #f1f1f3;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+    }
+
+    .top-bar {
+      background: #7f1d1d;
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #fca5a5;
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #d97706;
+      color: #07070f;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff, #f59e0b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: #9ca3af;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .highlight { color: #f59e0b; font-weight: 700; }
+
+    .card {
+      background: #0f0f1a;
+      border: 1px solid #1e1e2e;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card-gold { border-color: #d97706; }
+    .card-red  { border-left: 3px solid #dc2626; }
+
+    .section-title {
+      color: #f59e0b;
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .body-text {
+      color: #d1d5db;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .check-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .check-item span:first-child {
+      color: #84cc16;
+      font-size: 14px;
+      min-width: 16px;
+      margin-top: 2px;
+    }
+
+    .check-item span:last-child {
+      color: #d1d5db;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .price-box {
+      text-align: center;
+      padding: 24px 20px;
+    }
+
+    .price-from {
+      color: #6b7280;
+      font-size: 16px;
+      text-decoration: line-through;
+      margin-bottom: 4px;
+    }
+
+    .price-main {
+      color: #f59e0b;
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .price-note {
+      color: #84cc16;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #1e1e2e;
+      margin: 20px 0;
+    }
+
+    /* Botão Kiwify customizado */
+    #kiwify-upsell-D3Aq3zk {
+      text-align: center !important;
+    }
+
+    #kiwify-upsell-trigger-D3Aq3zk {
+      display: block !important;
+      width: 100% !important;
+      background: linear-gradient(135deg, #b91c1c, #ef4444) !important;
+      color: #fff !important;
+      font-weight: 800 !important;
+      font-size: 18px !important;
+      border: none !important;
+      border-radius: 14px !important;
+      padding: 20px 24px !important;
+      cursor: pointer !important;
+      box-shadow: 0 4px 24px rgba(239,68,68,.4) !important;
+      margin-bottom: 12px !important;
+      line-height: 1.3 !important;
+    }
+
+    #kiwify-upsell-cancel-trigger-D3Aq3zk {
+      color: #6b7280 !important;
+      font-size: 13px !important;
+      text-decoration: underline !important;
+      cursor: pointer !important;
+      margin-top: 12px !important;
+    }
+
+    .guarantee {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .guarantee-icon { font-size: 32px; }
+
+    .guarantee-text {
+      color: #9ca3af;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #f59e0b;
+      font-size: 14px;
+      line-height: 1.7;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 24px; }
+      .price-main { font-size: 44px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    ⚡ OFERTA EXCLUSIVA — Disponível apenas nessa página
+  </div>
+
+  <div class="container">
+
+    <!-- HEADLINE -->
+    <div style="text-align:center; margin-bottom: 28px;">
+      <span class="badge">OFERTA ESPECIAL PÓS-COMPRA</span>
+      <h1>Quando Parece Impossível — Protocolo para Casos Extremos</h1>
+      <p class="subtitle">
+        Ela bloqueou tudo? Está com outro? Faz meses sem nenhum contato?
+        <span class="highlight">Este protocolo foi feito exatamente para o seu caso.</span>
+      </p>
+    </div>
+
+    <!-- CONTEXTO -->
+    <div class="card card-red">
+      <p class="body-text">
+        O Protocolo de Reconquista funciona muito bem para a maioria dos casos.
+        Mas existem situações que exigem uma abordagem completamente diferente —
+        e que o protocolo padrão não cobre.
+      </p>
+      <p class="body-text">
+        Se você está em uma dessas situações, usar o protocolo padrão sem adaptação
+        pode <span class="highlight">destruir suas chances</span> ao invés de ajudar.
+      </p>
+    </div>
+
+    <!-- OS 3 CENÁRIOS -->
+    <div class="section-title">Os 3 cenários que este protocolo resolve:</div>
+
+    <div class="card card-gold">
+      <div class="check-item">
+        <span>🔇</span>
+        <span><strong style="color:#fff">Ela te bloqueou em tudo</strong> — WhatsApp, Instagram, telefone. Parece o fim, mas existe um caminho específico para essa situação.</span>
+      </div>
+      <hr class="divider">
+      <div class="check-item">
+        <span>💔</span>
+        <span><strong style="color:#fff">Ela está com outro</strong> — O novo relacionamento mudou tudo. A abordagem correta aqui é completamente diferente do protocolo padrão.</span>
+      </div>
+      <hr class="divider">
+      <div class="check-item">
+        <span>📅</span>
+        <span><strong style="color:#fff">Faz meses sem contato</strong> — A janela primária fechou. Mas existe um protocolo de longo prazo com resultados comprovados.</span>
+      </div>
+    </div>
+
+    <!-- O QUE VEM NO PROTOCOLO -->
+    <p class="section-title">O que você recebe:</p>
+
+    <div class="card" style="margin-bottom: 24px;">
+      <div class="check-item"><span>✓</span><span>Protocolo completo para cada um dos 3 cenários extremos</span></div>
+      <div class="check-item"><span>✓</span><span>Fase a fase — o que fazer e em qual semana</span></div>
+      <div class="check-item"><span>✓</span><span>O que NUNCA fazer no cenário com terceiro</span></div>
+      <div class="check-item"><span>✓</span><span>Como agir após longo período sem contato</span></div>
+      <div class="check-item"><span>✓</span><span>A mentalidade necessária para casos de longo prazo</span></div>
+      <div class="check-item"><span>✓</span><span>Casos reais de reconquista após bloqueio e separações longas</span></div>
+    </div>
+
+    <!-- QUOTE -->
+    <div class="card" style="margin-bottom: 24px;">
+      <p class="quote">
+        "Tivemos reconquistas após 8 meses de separação. Após bloqueio total de
+        6 semanas. Após ela ter iniciado um novo relacionamento. O que separou
+        esses casos dos que não funcionaram não foi a situação — foi a abordagem."
+      </p>
+      <p style="text-align:center; color:#6b7280; font-size:12px;">— Dr. Lucas Monteiro</p>
+    </div>
+
+    <!-- PREÇO -->
+    <div class="card card-gold price-box">
+      <p class="price-from">De R$197</p>
+      <p class="price-main">R$47</p>
+      <p class="price-note">✓ Acesso imediato — 1 clique, sem preencher nada</p>
+      <p style="color:#6b7280; font-size:11px; margin-top:6px;">Cobrado uma única vez</p>
+    </div>
+
+    <!-- BOTÃO KIWIFY -->
+    <div style="text-align:center" id="kiwify-upsell-D3Aq3zk" data-upsell-url="" data-downsell-url="">
+      <button id="kiwify-upsell-trigger-D3Aq3zk" style="background-color:#5383ad;padding:12px 16px;cursor:pointer;color:#FFFFFF;font-weight:600;border-radius:4px;border:1px solid #5383ad;font-size:20px;">
+        🔥 SIM — Quero o Protocolo para Casos Extremos por R$47
+      </button>
+      <div id="kiwify-upsell-cancel-trigger-D3Aq3zk" style="margin-top:1rem;cursor:pointer;font-size:16px;text-decoration:underline;font-family:sans-serif;">
+        Não, prefiro continuar apenas com o protocolo padrão
+      </div>
+    </div>
+
+    <!-- GARANTIA -->
+    <div class="guarantee" style="margin-top: 24px;">
+      <div class="guarantee-icon">🛡️</div>
+      <p class="guarantee-text">
+        <strong style="color:#fff">Garantia de 7 dias.</strong>
+        Se não ficar satisfeito, devolvemos 100% do valor.
+        Sem perguntas, sem burocracia.
+      </p>
+    </div>
+
+  </div>
+
+  <script src="https://snippets.kiwify.com/upsell/upsell.min.js"></script>
+</body>
+</html>
