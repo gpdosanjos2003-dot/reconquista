@@ -618,105 +618,149 @@ export default function FunilReconquista() {
 
         {/* ── A OFERTA ── */}
         <div style={{ marginBottom: 28 }}>
+
+          {/* URGÊNCIA TOPO */}
+          <div style={{ background: "#7f1d1d", border: "1px solid #dc2626", borderRadius: 12, padding: "14px 16px", marginBottom: 20, textAlign: "center" }}>
+            <div style={{ color: "#fca5a5", fontWeight: 800, fontSize: 13, marginBottom: 4 }}>⚠️ ATENÇÃO — OFERTA POR TEMPO LIMITADO</div>
+            <div style={{ color: "#f1f1f3", fontSize: 12, lineHeight: 1.5 }}>Essa página está ativa agora. Quando o timer zerar, o preço volta para R$197.</div>
+            <div style={{ marginTop: 8 }}><Timer seconds={900} /></div>
+          </div>
+
+          {/* HEADLINE OFERTA */}
           <div style={{ textAlign: "center", marginBottom: 20 }}>
-            <span style={S.tag("a")}>OFERTA ESPECIAL</span>
-            <h2 style={{ fontSize: 24, fontWeight: 900, marginBottom: 8 }}>
-              O que você vai receber
+            <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 6, color: "#f1f1f3" }}>
+              Tudo que você recebe hoje por apenas
             </h2>
-            <Timer seconds={900} />
+            <div style={{ color: "#f59e0b", fontSize: 48, fontWeight: 900, lineHeight: 1 }}>R$37</div>
+            <div style={{ color: "#6b7280", fontSize: 14, textDecoration: "line-through", marginTop: 4 }}>Valor real: R$386</div>
+            <div style={{ color: "#84cc16", fontSize: 13, fontWeight: 700, marginTop: 4 }}>Você economiza R$349 hoje</div>
           </div>
 
           {/* Produto principal */}
-          <div style={{ ...S.card, borderColor: "#d97706", marginBottom: 16 }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
-              <div style={{ fontWeight: 800, fontSize: 16, flex: 1 }}>
-                📘 Protocolo de Reconquista — Guia Completo
+          <div style={{ ...S.card, borderColor: "#d97706", marginBottom: 10 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
+              <div style={{ fontWeight: 800, fontSize: 15, flex: 1, color: "#f59e0b" }}>
+                📘 PRODUTO PRINCIPAL
               </div>
               <div style={{ textAlign: "right", flexShrink: 0, marginLeft: 8 }}>
-                <div style={{ color: "#6b7280", fontSize: 12, textDecoration: "line-through" }}>De R$197</div>
-                <div style={{ color: "#f59e0b", fontWeight: 900, fontSize: 22 }}>R$37</div>
+                <div style={{ color: "#6b7280", fontSize: 11, textDecoration: "line-through" }}>R$197</div>
+                <div style={{ color: "#f59e0b", fontWeight: 900, fontSize: 18 }}>R$37</div>
               </div>
             </div>
-            <div style={{ color: "#9ca3af", fontSize: 13, lineHeight: 1.7 }}>
-              O guia completo de 40+ páginas com o Protocolo de Reconexão dividido em fases. Inclui:
+            <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 8, color: "#f1f1f3" }}>
+              Protocolo de Reconquista — Guia Completo (40+ páginas)
             </div>
             {[
-              "Os 7 sinais de fraqueza que você envia sem perceber — e como parar imediatamente",
-              "O protocolo fase por fase para as primeiras 48 horas",
+              "Os 7 sinais de fraqueza que você envia sem perceber — e como parar agora",
+              "Protocolo fase a fase: o que fazer nos dias 1, 7, 14 e 21",
               "O que fazer se ela te bloqueou em tudo",
               "Como agir se ela já está com outro",
-              "As mensagens exatas que criam reconexão (com exemplos reais)",
-              "O plano de 21 dias completo",
+              "As mensagens exatas que reativam a conexão emocional",
+              "O plano de 21 dias completo com checklist diário",
             ].map((item, i) => (
-              <div key={i} style={{ display: "flex", gap: 8, marginTop: 8, alignItems: "flex-start" }}>
-                <span style={{ color: "#84cc16", minWidth: 16, fontSize: 13 }}>✓</span>
-                <span style={{ color: "#d1d5db", fontSize: 13 }}>{item}</span>
+              <div key={i} style={{ display: "flex", gap: 8, marginTop: 7, alignItems: "flex-start" }}>
+                <span style={{ color: "#84cc16", minWidth: 14, fontSize: 12 }}>✓</span>
+                <span style={{ color: "#d1d5db", fontSize: 12 }}>{item}</span>
               </div>
             ))}
           </div>
 
-          {/* Bônus */}
-          {[
-            {
-              emoji: "⚡",
-              title: 'BÔNUS 1: "Modo Emergência — Protocolo das Primeiras 48 Horas"',
-              desc: "Para quem terminou há menos de 3 dias. Ações específicas para as próximas horas.",
-              valor: "R$67",
-            },
-            {
-              emoji: "🔓",
-              title: 'BÔNUS 2: "Protocolo do Bloqueio — Quando Ela Cortou Todo Contato"',
-              desc: "O método alternativo para casos onde o contato direto é impossível.",
-              valor: "R$47",
-            },
-            {
-              emoji: "💬",
-              title: 'BÔNUS 3: "Banco de Mensagens — 27 Mensagens Que Criam Reconexão"',
-              desc: "Mensagens prontas, adaptáveis ao seu caso. Testadas em situações reais.",
-              valor: "R$37",
-            },
-          ].map((b, i) => (
-            <div key={i} style={{ ...S.card, marginBottom: 10, display: "flex", gap: 12, alignItems: "flex-start" }}>
-              <span style={{ fontSize: 24 }}>{b.emoji}</span>
+          {/* BÔNUS IMEDIATOS */}
+          <div style={{ background: "#0a1a0a", border: "1px solid #166534", borderRadius: 12, padding: "12px 14px", marginBottom: 10 }}>
+            <div style={{ color: "#84cc16", fontWeight: 800, fontSize: 12, marginBottom: 10, letterSpacing: 1 }}>🎁 BÔNUS IMEDIATOS — GRÁTIS</div>
+            {[
+              {
+                emoji: "💬",
+                title: 'Banco de Mensagens — 27 Mensagens que Criam Reconexão',
+                desc: "Mensagens prontas por fase e situação. Inclui as 5 mensagens que nunca devem ser enviadas.",
+                valor: "R$27",
+              },
+            ].map((b, i) => (
+              <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start", marginBottom: 6 }}>
+                <span style={{ fontSize: 18 }}>{b.emoji}</span>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontWeight: 700, fontSize: 12, color: "#f1f1f3", marginBottom: 2 }}>{b.title}</div>
+                  <div style={{ color: "#9ca3af", fontSize: 11, lineHeight: 1.4 }}>{b.desc}</div>
+                </div>
+                <div style={{ textAlign: "right", flexShrink: 0 }}>
+                  <div style={{ color: "#6b7280", fontSize: 10, textDecoration: "line-through" }}>{b.valor}</div>
+                  <div style={{ color: "#84cc16", fontWeight: 700, fontSize: 11 }}>GRÁTIS</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* BÔNUS DIA 7 */}
+          <div style={{ background: "#1a1200", border: "1px solid #d97706", borderRadius: 12, padding: "12px 14px", marginBottom: 20 }}>
+            <div style={{ color: "#f59e0b", fontWeight: 800, fontSize: 12, marginBottom: 10, letterSpacing: 1 }}>⭐ BÔNUS ESPECIAL — LIBERADO NO 7º DIA</div>
+            <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+              <span style={{ fontSize: 18 }}>🧲</span>
               <div style={{ flex: 1 }}>
-                <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 4, color: "#f1f1f3" }}>{b.title}</div>
-                <div style={{ color: "#9ca3af", fontSize: 12, lineHeight: 1.5 }}>{b.desc}</div>
+                <div style={{ fontWeight: 700, fontSize: 12, color: "#f1f1f3", marginBottom: 2 }}>Presença Magnética — Como Fazer Qualquer Mulher Sentir Sua Falta</div>
+                <div style={{ color: "#9ca3af", fontSize: 11, lineHeight: 1.4 }}>O guia de desenvolvimento masculino que funciona independente do resultado com a ex. Como se tornar o homem que mulheres não esquecem.</div>
               </div>
               <div style={{ textAlign: "right", flexShrink: 0 }}>
-                <div style={{ color: "#6b7280", fontSize: 11, textDecoration: "line-through" }}>{b.valor}</div>
-                <div style={{ color: "#84cc16", fontWeight: 700, fontSize: 12 }}>GRÁTIS</div>
+                <div style={{ color: "#6b7280", fontSize: 10, textDecoration: "line-through" }}>R$97</div>
+                <div style={{ color: "#f59e0b", fontWeight: 700, fontSize: 11 }}>GRÁTIS</div>
               </div>
             </div>
-          ))}
+            <div style={{ marginTop: 10, background: "#0f0f00", borderRadius: 8, padding: "8px 10px" }}>
+              <div style={{ color: "#fcd34d", fontSize: 11, fontWeight: 600 }}>
+                🔒 Por que liberamos no dia 7?
+              </div>
+              <div style={{ color: "#9ca3af", fontSize: 11, lineHeight: 1.5, marginTop: 4 }}>
+                Porque queremos que você aplique o protocolo primeiro. No 7º dia você já estará vendo os primeiros resultados — e o Presença Magnética vai potencializar tudo.
+              </div>
+            </div>
+          </div>
 
-          {/* Resumo total */}
-          <div style={{ ...S.card, borderColor: "#d97706", textAlign: "center", marginTop: 20, marginBottom: 24 }}>
-            <div style={{ color: "#9ca3af", fontSize: 13, marginBottom: 4 }}>Valor total dos materiais</div>
-            <div style={{ color: "#6b7280", fontSize: 18, textDecoration: "line-through", marginBottom: 4 }}>R$348</div>
-            <div style={{ color: "#f59e0b", fontSize: 44, fontWeight: 900, lineHeight: 1 }}>R$37</div>
-            <div style={{ color: "#84cc16", fontSize: 13, marginTop: 4 }}>Acesso imediato após a compra</div>
+          {/* RESUMO TOTAL */}
+          <div style={{ ...S.card, borderColor: "#d97706", textAlign: "center", marginBottom: 20 }}>
+            <div style={{ color: "#9ca3af", fontSize: 12, marginBottom: 8 }}>RESUMO DO QUE VOCÊ LEVA</div>
+            {[
+              ["Protocolo de Reconquista", "R$197"],
+              ["Banco de Mensagens", "R$27"],
+              ["Presença Magnética", "R$97"],
+              ["Acesso imediato + dia 7", "—"],
+            ].map(([item, val], i) => (
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "6px 0", borderBottom: "1px solid #1e1e2e" }}>
+                <span style={{ color: "#d1d5db", fontSize: 12 }}>✓ {item}</span>
+                <span style={{ color: "#6b7280", fontSize: 12, textDecoration: val !== "—" ? "line-through" : "none" }}>{val}</span>
+              </div>
+            ))}
+            <div style={{ display: "flex", justifyContent: "space-between", padding: "10px 0 4px", borderTop: "2px solid #d97706", marginTop: 4 }}>
+              <span style={{ color: "#9ca3af", fontSize: 13, fontWeight: 700 }}>Valor total</span>
+              <span style={{ color: "#6b7280", fontSize: 13, textDecoration: "line-through" }}>R$386</span>
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <span style={{ color: "#f59e0b", fontSize: 16, fontWeight: 900 }}>Hoje por apenas</span>
+              <span style={{ color: "#f59e0b", fontSize: 36, fontWeight: 900 }}>R$37</span>
+            </div>
+            <div style={{ color: "#84cc16", fontSize: 12, fontWeight: 700, marginTop: 4 }}>
+              ✓ Acesso imediato ✓ Bônus no dia 7 ✓ Garantia de 7 dias
+            </div>
           </div>
 
           {/* CTA principal */}
-          <button style={{ ...S.btnRed, marginBottom: 12, fontSize: 20, padding: "22px 24px" }} onClick={() => window.open("https://pay.kiwify.com.br/4fcrjeN", "_blank")}>
-            🔥 QUERO MEU PROTOCOLO POR R$37
+          <button style={{ ...S.btnRed, marginBottom: 10, fontSize: 19, padding: "20px 24px" }} onClick={() => window.open("https://pay.kiwify.com.br/4fcrjeN", "_blank")}>
+            🔥 QUERO TUDO ISSO POR APENAS R$37
           </button>
-          <button style={{ ...S.btn, fontSize: 14, padding: "14px 24px", marginBottom: 20 }} onClick={() => window.open("https://pay.kiwify.com.br/4fcrjeN", "_blank")}>
-            👉 GARANTIR ACESSO IMEDIATO
+          <button style={{ ...S.btn, fontSize: 13, padding: "14px 24px", marginBottom: 20 }} onClick={() => window.open("https://pay.kiwify.com.br/4fcrjeN", "_blank")}>
+            👉 GARANTIR MEU ACESSO AGORA
           </button>
 
           {/* Garantia */}
-          <div style={{ ...S.card, textAlign: "center", marginBottom: 24 }}>
-            <div style={{ fontSize: 36, marginBottom: 8 }}>🛡️</div>
-            <div style={{ fontWeight: 800, fontSize: 16, marginBottom: 8 }}>Garantia Total de 7 Dias</div>
+          <div style={{ ...S.card, textAlign: "center", marginBottom: 20 }}>
+            <div style={{ fontSize: 32, marginBottom: 8 }}>🛡️</div>
+            <div style={{ fontWeight: 800, fontSize: 15, marginBottom: 6 }}>Garantia Incondicional de 7 Dias</div>
             <p style={{ color: "#9ca3af", fontSize: 13, lineHeight: 1.6, margin: 0 }}>
-              Se por qualquer motivo você não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. Você fica com os materiais de qualquer forma.
+              Aplique o protocolo por 7 dias. Se não começar a ver resultados ou não ficar 100% satisfeito por qualquer motivo, devolvemos cada centavo. Sem perguntas. Sem burocracia. E você ainda fica com todos os materiais.
             </p>
           </div>
 
           {/* Segurança */}
           <div style={{ display: "flex", justifyContent: "center", gap: 20, marginBottom: 20 }}>
-            {["🔒 Pagamento Seguro", "⚡ Acesso Imediato", "📧 Enviado por Email"].map((item) => (
+            {["🔒 Pagamento Seguro", "⚡ Acesso Imediato", "📧 Entrega por Email"].map((item) => (
               <div key={item} style={{ color: "#6b7280", fontSize: 11, textAlign: "center" }}>{item}</div>
             ))}
           </div>
