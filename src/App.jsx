@@ -497,7 +497,7 @@ export default function FunilReconquista() {
               background: "linear-gradient(135deg, #d97706, #92400e)",
               display: "flex", alignItems: "center", justifyContent: "center",
               fontSize: 28, flexShrink: 0, overflow: "hidden",
-            }><img src="https://i.ibb.co/9mBwqZ5G/Chat-GPT-Image-1-de-ago-de-2026-12-05-14.png" alt="Dr. Lucas Monteiro" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+            }><img src="/dr-lucas.png" alt="Dr. Lucas Monteiro" style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
             <div>
               <div style={{ fontWeight: 800, fontSize: 16 }}>Dr. Lucas Monteiro</div>
               <div style={{ color: "#9ca3af", fontSize: 13 }}>Psicólogo Comportamental • Pesquisador de Vínculos Afetivos</div>
