@@ -698,10 +698,10 @@ export default function FunilReconquista() {
           </div>
 
           {/* CTA principal */}
-          <button style={{ ...S.btnRed, marginBottom: 12, fontSize: 20, padding: "22px 24px" }} onClick={() => window.open("https://go.perfectpay.com.br/PPU38CQER5N", "_blank")}>
+          <button style={{ ...S.btnRed, marginBottom: 12, fontSize: 20, padding: "22px 24px" }} onClick={() => window.open("https://pay.kiwify.com.br/4fcrjeN", "_blank")}>
             🔥 QUERO MEU PROTOCOLO POR R$37
           </button>
-          <button style={{ ...S.btn, fontSize: 14, padding: "14px 24px", marginBottom: 20 }} onClick={() => window.open("https://go.perfectpay.com.br/PPU38CQER5N", "_blank")}>
+          <button style={{ ...S.btn, fontSize: 14, padding: "14px 24px", marginBottom: 20 }} onClick={() => window.open("https://pay.kiwify.com.br/4fcrjeN", "_blank")}>
             👉 GARANTIR ACESSO IMEDIATO
           </button>
 
@@ -757,7 +757,7 @@ export default function FunilReconquista() {
               Você chegou até aqui porque ainda acredita que tem uma chance.<br />
               <strong style={{ color: "#fff" }}>Essa crença é o que vai fazer a diferença.</strong>
             </p>
-            <button style={{ ...S.btnRed, fontSize: 18, padding: "20px 24px", marginBottom: 12 }} onClick={() => window.open("https://go.perfectpay.com.br/PPU38CQER5N", "_blank")}>
+            <button style={{ ...S.btnRed, fontSize: 18, padding: "20px 24px", marginBottom: 12 }} onClick={() => window.open("https://pay.kiwify.com.br/4fcrjeN", "_blank")}>
               🔥 SIM — QUERO MEU PROTOCOLO POR R$37
             </button>
             <p style={{ color: "#4b5563", fontSize: 11 }}>
